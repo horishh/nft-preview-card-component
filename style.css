@@ -1,0 +1,153 @@
+/*- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(217, 54%, 11%);
+    box-sizing: border-box;
+}
+
+
+
+img{
+   max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+img:hover{
+    width: 300px;
+    height: 300px;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0.5;
+    cursor: pointer;
+    content: url(./images/icon-view.svg);
+    display: inline-block;
+    
+}
+
+.container{
+    height: 530px;
+    width: 300px;
+    color: white;
+    background-color: hsl(216, 50%, 16%) ;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    align-items: flex-start;
+    border-radius: 1rem;
+    margin:150px auto;
+}
+
+h1{
+    color: white;
+    text-align: left;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+p{
+    color: hsl(215, 51%, 70%);
+    letter-spacing: 0.05rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight:300;
+}
+
+span.price{
+    color: hsl(178, 100%, 50%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+}
+
+span.price::before{
+    content: url(./images/icon-ethereum.svg);
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    padding: 0 10px 0 0px;
+    }
+
+span.days{
+    padding: 0 0 0 98px;
+    color: hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+}
+
+span.days::before{
+    content: url(./images/icon-clock.svg);
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    }
+
+    .line{
+        padding: 0.1px;
+        height: 1px;
+        width: 300px;
+  background: hsl(215, 51%, 70%);
+  margin: 1rem 0 1rem 0;
+    }
+
+    span.name{
+        color: hsl(215, 51%, 70%);
+        letter-spacing: 0.1rem;
+        padding-right : 10px ;
+    }
+
+   .info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+}
+
+.info:hover{
+    color: hsl(178, 100%, 50% 60%);
+    cursor: pointer;
+}
+
+img.avatar{
+    height: 40px;
+    width: 40px;
+    padding-right: 15px;
+   }
+
+   .attribution{
+    color: white;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+   }
+
+   a{
+    text-decoration: none;
+   }
+
+   @media (min-width: 500px) {
+    .container{
+        width: 300px;
+        margin: 0 auto 1rem;
+    }
+   }
+   
